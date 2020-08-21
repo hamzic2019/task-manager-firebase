@@ -123,7 +123,7 @@
 .access {
     widht:100%;
     height: 60px;
-    background-color:rgba(46, 139, 86, 0.150);
+    background-color:rgba(46, 139, 86, 0.089);
     border-radius: 25px 25px 0 0;
     padding:17.5px 15px;
     display: flex;
@@ -147,6 +147,10 @@
 .access a.active {
     font-weight: 900!important;
 }
+#showCompletedTasks {
+    width:100px;
+    margin-left:40px;
+}
 
 .addTask {
     height: 100%;
@@ -163,14 +167,14 @@
 }
 
 .actions {
-    flex-grow:1;
+    flex-grow:2;
 }
 .btn-group {
     flex-grow:1;
 }
 
 .task-description {
-    widht:100%;
+    width:100%;
     height: 30px;
     background-color:rgba(46, 139, 86, 0.250);
     border-radius:0;
@@ -179,6 +183,8 @@
     justify-content: center;
     align-content: center;
     text-align:center;
+    font-weight: 900;
+    color:seagreen;
 }
 
 .description-items {
@@ -187,9 +193,11 @@
 
 .ditem1 {
     flex-grow: 1;
+    width: 92px;
 }
 .ditem2 {
     flex-grow: 12;
+    text-align:left;
 
 }
 .ditem3 {
@@ -199,3 +207,59 @@
     flex-grow: 1;
 }
 
+
+.task {
+    width:100%;
+    height: 60px;
+    /* background-color:rgba(171, 63, 185, 0.25); */
+    border-radius:0;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.080);
+}
+
+.task-items {
+    margin-right: 1px;
+    align-self: center;
+}
+
+.task-progress {
+    flex-grow: 1;
+    text-align:center;
+    width: 120px;
+}
+
+.task-name {
+    flex-grow: 12;
+    font-size: 25px;
+    color:rgba(0, 0, 0, 0.438);
+}
+
+.task-urgency {
+    flex-grow: 1;
+    text-align:center;
+    width: 95px;
+}
+
+.task-action {
+    flex-grow: 1;
+    text-align:center;
+    width: 80px;
+}
+
+.progress-input {
+    height: 50px;
+    font-size:50px;
+    width: 30px;
+}
+
+.remove-task {
+    padding:5px 15px;
+    font-size:
+}
+
+.fa-trash-alt {
+    font-size:28px;
+    color:rgba(32, 131, 75, 0.753);
+}

@@ -6,6 +6,7 @@
     <title>Interactive Task Manager</title>
     <link rel="stylesheet" href="style/index.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -28,7 +29,7 @@
         <div class="access">
                 <div class="actions">
                     <a id="showAllTasks" class="active">Tasks</a>
-                    <a id="showCompletedTasks">Completed</a>
+                    <a id="showCompletedTasks">Removed</a>
                 </div>
                 <div class="btn-group">
                     <button class="addTask">Add Task</button>
@@ -41,7 +42,16 @@
             <p class="description-items ditem4">Action</p>
         </div>
 
-
+        <div class="task">
+            <p class="task-items task-progress">
+                <input class="progress-input" type="checkbox">
+            </p>
+            <p class="task-items task-name">I've to buy new laptop for my job tasks</p>
+            <p class="task-items task-urgency">Level 1</p>
+            <p class="task-items task-action">
+                <i class='far fa-trash-alt'></i>
+            </p>
+        </div>
     
 
     </div>
