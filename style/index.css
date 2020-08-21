@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*, *::before, *::after {
+* {
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-    overflow: hidden;
+    
+
 }
+
+
 
 .navigation {
     background-color:seagreen;
     font-family: 'Raleway',sans-serif;
     height: 250px;
-    padding:25px 50px;
+    padding:25px 100px;
+    overflow: hidden;
 }
 
 .logo {
     color:white;
     font-weight: 900;
     font-size:50px;
-    /* background-color:red; */
     display: inline-block;
-    /* width: 250px; */
     height: 60px;
+    overflow: hidden;
 
 }
 
@@ -30,6 +33,7 @@
     font-size: 50px;
     color:white;
     padding:5px 10px;
+    overflow: hidden;
 }
 
 .search-div {
@@ -37,9 +41,10 @@
     height: 60px;
     width: 450px;
     margin-left:50px;
+    overflow: hidden;
 }
 
- .search {
+.search {
      width: 100%;
      height: 100%;
      padding: 10px 50px;
@@ -49,16 +54,16 @@
      outline: none;
      border-width: 0px;
      color:white;
-
+     overflow: hidden;
      font-size: 25px;
      font-weight: 100;
- }
+}
 
-  .search::placeholder {
+.search::placeholder {
       color:rgba(255, 255, 255, 0.65);
-  }
+}
 
-  .fa-search {
+.fa-search {
       float: left;
       margin-left:15px;
       margin-top:-43px;
@@ -66,18 +71,20 @@
       z-index: 2;
       color: rgba(255, 255, 255, 0.65);
       font-size: 25px;
-  }
+      overflow: hidden;
+}
 
 
-  .profile-div {
+.profile-div {
     display: inline-block;
     height: 50px;
     width: 250px;
     margin:5px 0px 5px 50px;
     float:right;
-  }
+    overflow: hidden;
+}
 
-  .fa-user-alt {
+.fa-user-alt {
     padding:15px 5px;
     font-size:20px;
     color:seagreen;
@@ -86,14 +93,78 @@
     width: 50px;
     text-align:center;
     height: 100%;
+    overflow: hidden;
 
-  }
+}
 
-  .username {
+.username {
       color:white;
       font-size:30px;
       display:inline-block;
       height: 100%;
       padding:8px;
       float:right;
-  }
+}
+
+
+.task-display {
+      width: 85%;
+      height: 1200px;
+      margin:0 auto;
+      background-color: white;
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.185);
+      border-radius: 25px;
+      position: relative;
+      top:-60px;
+      font-family: 'Raleway',
+      sans-serif;
+}
+
+.access {
+    widht:100%;
+    height: 60px;
+    background-color:rgba(46, 139, 86, 0.150);
+    border-radius: 25px 25px 0 0;
+    padding:17.5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    flex-direction: row;
+}
+
+.access a{
+    list-style-type:none;
+    text-decoration-style: none;
+    text-decoration: none;
+    color:seagreen;
+    margin-left:25px;
+    font-size:21.5px;
+    padding:0px 8px;
+    cursor: pointer;
+    
+}
+
+.access a.active {
+    font-weight: 900!important;
+}
+
+.addTask {
+    height: 100%;
+    padding: 10px 35px;
+    margin: 0;
+    border:0px solid;
+    offset: none;
+    outline: none;
+    float:right;
+    background-color:seagreen;
+    color:white;
+    border-radius: 5px;
+    font-size: 21.5px;
+}
+
+.actions {
+    flex-grow:1;
+}
+.btn-group {
+    flex-grow:1;
+}
